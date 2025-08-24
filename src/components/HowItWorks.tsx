@@ -23,7 +23,7 @@ export default function HowItWorks() {
         return () => window.removeEventListener("resize", checkMobile);
     }, []);
 
-    // Синхронизация размеров скрина с левым блоком
+
     useEffect(() => {
         if (!leftRef.current || !rightRef.current) return;
 

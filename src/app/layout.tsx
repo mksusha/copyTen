@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css"; // здесь подключен твой локальный Nunito через @font-face
+import "./globals.css";
 
 export const metadata: Metadata = {
     title: "Лендинг робота для облигаций",

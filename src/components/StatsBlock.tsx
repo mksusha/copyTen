@@ -5,9 +5,9 @@ import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recha
 import CountUp from "react-countup";
 
 const data = [
-    { name: "Только облигации", value: 1.3 },
-    { name: "Стратегия для облигаций (1,2 млн ₽)", value: 2.7 },
-    { name: "Квартира", value: 0.45 }
+    { name: "Только облигации", доходность: 1.3 },
+    { name: "Стратегия для облигаций (1,2 млн ₽)", доходность: 2.7 },
+    { name: "Квартира", доходность: 0.45 }
 ];
 
 export default function StatsBlock() {
@@ -62,11 +62,15 @@ export default function StatsBlock() {
                                 <span className="text-gray-500">Купонный доход</span>
                                 <span className="font-semibold text-gray-900 text-lg sm:text-xl">~11 333 ₽</span>
                             </div>
-                            <div className="flex justify-between text-base sm:text-lg">
-                                <span className="text-gray-500">Прибыль от стратегии</span>
-                                <span
-                                    className="font-semibold text-emerald-500 text-lg sm:text-xl">13 333–20 000 ₽</span>
+                            <div className="flex justify-between text-base sm:text-lg gap-2">
+    <span className="text-gray-500 flex-1 min-w-[120px] break-words">
+        Прибыль от стратегии
+    </span>
+                                <span className="font-semibold text-emerald-500 text-lg sm:text-xl whitespace-nowrap">
+        13 333–20 000 ₽
+    </span>
                             </div>
+
                         </div>
 
                         <motion.div
@@ -117,8 +121,9 @@ export default function StatsBlock() {
                             <BarChart data={data}>
                                 <XAxis dataKey="name" tick={{fontSize: 10}}/>
                                 <YAxis domain={[0, 5]} tickFormatter={(val) => `${val}%`}/>
-                                <Tooltip formatter={(value) => `${value}%`}/>
-                                <Bar dataKey="value" fill="url(#gradient)" radius={[10, 10, 0, 0]}/>
+                                <Tooltip formatter={(value) => `${value}%`}
+                                         labelFormatter={(name) => `Сценарий: ${name}`}/>
+                                <Bar dataKey="доходность" fill="url(#gradient)" radius={[10, 10, 0, 0]}/>
                                 <defs>
                                     <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
                                         <stop offset="0%" stopColor="#10b981" stopOpacity={1}/>
