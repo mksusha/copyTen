@@ -6,7 +6,6 @@ import CountUp from "react-countup";
 
 const data = [
     { name: "Только облигации", value: 1.3 },
-    { name: "Стратегия для облигаций (1 млн ₽)", value: 2.8 },
     { name: "Стратегия для облигаций (1,2 млн ₽)", value: 2.7 },
     { name: "Квартира", value: 0.45 }
 ];
