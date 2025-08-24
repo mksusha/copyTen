@@ -1,6 +1,11 @@
 "use client";
 
-import { CurrencyDollarIcon, ChartBarIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
+import {
+    CurrencyDollarIcon,
+    ArrowsUpDownIcon,
+    ScaleIcon,
+    CheckBadgeIcon,
+} from "@heroicons/react/24/outline";
 
 const features = [
     {
@@ -9,26 +14,31 @@ const features = [
         icon: CurrencyDollarIcon,
     },
     {
-        name: "Дополнительная прибыль от колебаний цен.",
-        description: "Рынок облигаций колеблется, и эти движения — источник дополнительного дохода.",
-        icon: ChartBarIcon,
+        name: "Колебания цен — это возможность.",
+        description: "Даже самые надёжные облигации имеют предсказуемые движения цен, которые робот использует для прибыли.",
+        icon: ArrowsUpDownIcon,
     },
     {
-        name: "Работает в любой стране, включая Россию.",
-        description: "Алгоритм не привязан к конкретной юрисдикции — он универсален и гибок.",
-        icon: GlobeAltIcon,
+        name: "Фундаментальный подход.",
+        description:
+            "Цены облигаций всегда движутся вверх и вниз — как волны: быстрый рост сменяется небольшой коррекцией. Эти колебания создают возможности для прибыли, а наш робот их улавливает. Стратегия опирается на стабильность купонного дохода и алгоритмическую торговлю, минимизирующую человеческие ошибки.",
+        icon: ScaleIcon,
+    },
+    {
+        name: "Доказанная эффективность.",
+        description:
+            "Стратегия успешно работает в России и на международных рынках, подтверждена бэктестом за 2018–2024 годы.",
+        icon: CheckBadgeIcon,
     },
 ];
 
 export default function WhyItWorksPlaceholder() {
     return (
-        <section className="bg-gray-50  py-16 ">
+        <section className="bg-gray-50 py-16">
             <div className="mx-auto max-w-[1350px] px-8 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-12 lg:gap-y-0">
 
-
                     <div className="flex flex-col justify-center space-y-4">
-
                         <p className="text-2xl sm:text-3xl lg:text-4xl text-center md:text-left font-bold tracking-tight text-gray-900">
                             Это не хайп. Это базовый принцип рынка
                         </p>
@@ -36,7 +46,6 @@ export default function WhyItWorksPlaceholder() {
                             Облигации — надёжный инструмент, но их цены колеблются из-за рыночных факторов.
                             Эти колебания — возможность для дополнительной прибыли. Робот ловит их автоматически.
                         </p>
-
 
                         <div className="space-y-4">
                             {features.map((feature, idx) => (
@@ -56,7 +65,6 @@ export default function WhyItWorksPlaceholder() {
                             </p>
                         </div>
                     </div>
-
 
                     <div className="flex items-center justify-center">
                         <div className="w-full bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl sm:rounded-3xl border-2 border-dashed border-gray-300 h-[220px] sm:h-[300px] lg:h-full flex items-center justify-center p-6 sm:p-8">

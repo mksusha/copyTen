@@ -22,9 +22,9 @@ export default function SecurityBlock() {
             text: "API позволяет роботу только покупать и продавать. Вывод средств невозможен."
         },
         {
-            icon: <Building2 className="w-8 h-8 sm:w-10 sm:h-10" />,
-            title: "Только ваш брокер",
-            text: "Деньги находятся на вашем счёте у лицензированного брокера."
+            icon: <Shield className="w-8 h-8 sm:w-10 sm:h-10" />,
+            title: "Безопасный доступ",
+            text: "Ваш счёт защищён благодаря безопасному доступу, ограниченному только торговлей."
         },
         {
             icon: <XCircle className="w-8 h-8 sm:w-10 sm:h-10" />,
@@ -32,6 +32,7 @@ export default function SecurityBlock() {
             text: "Мы не можем забрать или перевести ваши средства."
         }
     ];
+
 
     return (
         <section className="bg-gray-50 py-14 sm:py-20 px-4 sm:px-6 overflow-hidden">

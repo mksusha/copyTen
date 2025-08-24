@@ -7,6 +7,10 @@ import StatsBlock from "@/components/StatsBlock";
 import SecurityBlock from "@/components/SecurityBlock";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
+import BondsSelection from "@/components/BondsSelection";
+import RiskMinimization from "@/components/RiskMinimization";
+import PricingResult from "@/components/PricingResult";
+import SupportBlock from "@/components/SupportBlock";
 
 export default function Home() {
   return (
@@ -17,6 +21,10 @@ export default function Home() {
           <WhyItWorks></WhyItWorks>
           <StatsBlock></StatsBlock>
           <SecurityBlock></SecurityBlock>
+          <BondsSelection></BondsSelection>
+<RiskMinimization></RiskMinimization>
+          <PricingResult></PricingResult>
+          <SupportBlock></SupportBlock>
           <FAQ></FAQ>
           <FinalCTA></FinalCTA>
 
