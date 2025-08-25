@@ -11,6 +11,7 @@ import BondsSelection from "@/components/BondsSelection";
 import RiskMinimization from "@/components/RiskMinimization";
 import PricingResult from "@/components/PricingResult";
 import SupportBlock from "@/components/SupportBlock";
+import CasesSection from "@/components/CasesSection";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
 <RiskMinimization></RiskMinimization>
           <PricingResult></PricingResult>
           <SupportBlock></SupportBlock>
+          <CasesSection></CasesSection>
           <FAQ></FAQ>
           <FinalCTA></FinalCTA>
 

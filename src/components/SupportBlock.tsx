@@ -156,11 +156,11 @@ export default function SupportBlock() {
                             Интерфейс поддержки
                         </h3>
 
-                        <div className="rounded-xl overflow-hidden shadow-md">
+                        <div className="rounded-3xl overflow-hidden shadow-md">
                             <img
-                                src="/images/support-interface.png"
+                                src="/sc5.jpg"
                                 alt="Интерфейс поддержки"
-                                className="w-30 h-110 object-contain"
+                                className="w-full sm:h-[32rem] h-auto rounded-3xl"
                             />
                         </div>
 
