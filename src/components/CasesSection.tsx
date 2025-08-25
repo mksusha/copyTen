@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Card({ children }: { children: React.ReactNode }) {
     return (
-        <div className="flex flex-col justify-between h-full rounded-2xl shadow-md border border-gray-200 p-6 bg-white">
+        <div className="flex flex-col justify-between h-full rounded-3xl shadow-md border border-gray-200 p-6 bg-white">
             {children}
         </div>
     );
@@ -38,7 +38,7 @@ const IconQuote = (props: React.SVGProps<SVGSVGElement>) => (
 export default function CasesSection() {
     return (
         <section className="w-full py-16 px-4 bg-gray-50">
-            <div className="max-w-[1350px] px-10 mx-auto text-center">
+            <div className="max-w-[1350px] sm:px-10 px-1 mx-auto text-center">
                 <motion.h2
                     initial={{opacity: 0, y: 20}}
                     whileInView={{opacity: 1, y: 0}}
@@ -76,8 +76,7 @@ export default function CasesSection() {
                                         <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
                                             <span className="inline-flex items-center gap-1"><IconCalendar
                                                 className="w-4 h-4"/>Март — июнь 2024</span>
-                                            <span className="inline-flex items-center gap-1 text-emerald-600"><IconTrend
-                                                className="w-4 h-4"/>+15.9% за 4 месяца</span>
+                                            <span className="inline-flex items-center gap-1 text-emerald-600">+15.9% за 4 месяца</span>
                                         </div>
                                     </div>
                                 </div>
@@ -155,8 +154,7 @@ export default function CasesSection() {
                                         <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
                                             <span className="inline-flex items-center gap-1"><IconCalendar
                                                 className="w-4 h-4"/>Январь — июль 2024</span>
-                                            <span className="inline-flex items-center gap-1 text-emerald-600"><IconTrend
-                                                className="w-4 h-4"/>29% годовых</span>
+                                            <span className="inline-flex items-center gap-1 text-emerald-600">29% годовых</span>
                                         </div>
                                     </div>
                                 </div>
@@ -223,7 +221,7 @@ export default function CasesSection() {
                     whileInView={{opacity: 1, y: 0}}
                     transition={{duration: 0.6, delay: 0.4}}
                     viewport={{once: true}}
-                    className="mt-16 bg-white rounded-2xl shadow-md border border-gray-200 p-8"
+                    className="mt-10 bg-white rounded-3xl shadow-md border border-gray-200 p-8"
                 >
                     <h3 className="text-2xl font-bold mb-8">Общая статистика клиентов</h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -245,17 +243,14 @@ export default function CasesSection() {
                         </div>
                     </div>
 
-                    <div className="mt-8 bg-gray-50 p-4 rounded-xl text-sm text-gray-700 text-left">
+                    <div className="mt-8 bg-gray-50 p-4 rounded-xl text-sm text-gray-700 text-center">
                         <p className="font-semibold inline">Важное уточнение: </p>
                         Результаты в прошлом не гарантируют прибыль в будущем. Торговля облигациями связана с рисками.
                     </div>
 
                     <div
                         className="mt-4 bg-emerald-50 text-emerald-700 text-sm font-medium px-4 py-2 rounded-lg inline-flex items-center gap-2">
-                        <svg viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-                            <path
-                                d="M10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm3.7-9.7a1 1 0 0 0-1.4-1.4L9 10.2 7.7 9a1 1 0 1 0-1.4 1.4l2 2a1 1 0 0 0 1.4 0l4-4Z"/>
-                        </svg>
+
                         Результаты основаны на реальных торговых данных
                     </div>
                 </motion.div>
