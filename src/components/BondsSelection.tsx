@@ -25,7 +25,7 @@ export default function BondsSelection() {
     ];
 
     return (
-        <section className="bg-gray-50 py-12 px-4 md:px-8">
+        <section id='bonds-selection' className="bg-gray-50  py-16 px-4 md:px-8">
             <div className="max-w-[1350px] mx-auto text-center mb-10 px-4 sm:px-6">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                     Из 5000+ бумаг — только 20–40 самых надёжных.

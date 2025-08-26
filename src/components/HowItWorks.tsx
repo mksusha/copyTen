@@ -40,7 +40,7 @@ export default function HowItWorks() {
     }, []);
 
     return (
-        <section className="py-12 bg-gray-50 md:py-24 relative overflow-hidden">
+        <section id="how-it-works" className="py-12 bg-gray-50 md:py-24 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-32 h-32 bg-green-100 rounded-full blur-3xl opacity-30 -translate-x-16 -translate-y-16"></div>
             <div className="absolute bottom-0 right-0 w-40 h-40 bg-blue-100 rounded-full blur-3xl opacity-30 translate-x-16 translate-y-16"></div>
 
@@ -81,7 +81,7 @@ export default function HowItWorks() {
                     <div ref={rightRef} className="flex justify-center items-start mt-8 lg:mt-0">
                         <div className="w-full sm:h-96 h-64 bg-black rounded-3xl">
                             <Image
-                                src="/sc3.jpg"
+                                src="/sc9.jpg"
                                 alt="Скрин интерфейса робота"
                                 width={600}
                                 height={400}

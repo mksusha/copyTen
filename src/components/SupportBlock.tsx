@@ -5,7 +5,7 @@ import { MessageCircle, Video, HeadphonesIcon } from "lucide-react";
 
 export default function SupportBlock() {
     return (
-        <section className="bg-gray-50 py-16 px-4 sm:px-6">
+        <section id='support' className="bg-gray-50 py-16 px-4 sm:px-6">
             <div className="max-w-[1250px] mx-auto">
 
                 <div className="text-center mb-12">

@@ -12,6 +12,7 @@ import RiskMinimization from "@/components/RiskMinimization";
 import PricingResult from "@/components/PricingResult";
 import SupportBlock from "@/components/SupportBlock";
 import CasesSection from "@/components/CasesSection";
+import DisclaimerFooter from "@/components/DisclaimerFooter";
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
           <CasesSection></CasesSection>
           <FAQ></FAQ>
           <FinalCTA></FinalCTA>
-
+<DisclaimerFooter></DisclaimerFooter>
       </main>
   );
 }

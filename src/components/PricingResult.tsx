@@ -5,7 +5,7 @@ import { Server, Percent } from "lucide-react";
 
 export default function PricingBlock() {
     return (
-        <section className="bg-gray-50 py-12 px-4 sm:px-6">
+        <section id='pricing' className="bg-gray-50 py-16 px-4 sm:px-6">
             <div className="max-w-[1250px] mx-auto">
 
                 <motion.h2
@@ -14,7 +14,7 @@ export default function PricingBlock() {
                     transition={{ duration: 0.6 }}
                     className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-center text-gray-900 mb-4"
                 >
-                    Вы платите только за результат.
+                    Вы платите только за результат.*
                 </motion.h2>
 
                 <motion.p
@@ -73,7 +73,7 @@ export default function PricingBlock() {
                         transition={{ duration: 0.8 }}
                         className="bg-white rounded-2xl p-5 sm:p-6 shadow-md flex flex-col gap-4"
                     >
-                        <h3 className="text-gray-900 font-semibold text-lg sm:text-xl">Пример расчёта на 1 год</h3>
+                        <h3 className="text-gray-900 font-semibold text-lg sm:text-xl">Пример расчёта на 1 год*</h3>
 
                         <div className="flex flex-col divide-y divide-gray-100">
                             {[

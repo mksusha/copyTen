@@ -64,12 +64,12 @@ export default function RiskMinimization() {
     ];
 
     return (
-        <section className="bg-gray-50 py-12 px-4 md:px-8">
+        <section id='risk-minimization' className="bg-gray-50 py-16 px-4 md:px-8">
             <div className="max-w-[1350px] px-4 md:px-10 mx-auto">
 
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-                        Единственный риск — дефолт. Но мы его минимизируем.
+                        Единственный риск — дефолт. Но мы его минимизируем.*
                     </h2>
                     <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
                         Дефолт возможен, но с нашим подходом маловероятен. Мы используем

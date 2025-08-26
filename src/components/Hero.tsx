@@ -23,7 +23,7 @@ export default function StatsHero() {
                     </h1>
 
                     <p className="text-gray-700 text-base sm:text-lg md:text-2xl leading-relaxed">
-                        Получайте <span className="font-semibold text-emerald-500">22–35% годовых</span>: стабильный
+                        Получайте <span className="font-semibold text-emerald-500">22–35% годовых*</span>: стабильный
                         доход от облигаций + прибыль от робота.
                     </p>
 
@@ -31,12 +31,18 @@ export default function StatsHero() {
                         Деньги всегда на вашем брокерском счёте.
                     </p>
 
-                    <button
-                        className="bg-gradient-to-r text-lg from-emerald-500 to-green-400 hover:from-emerald-600 hover:to-green-500 text-white font-semibold py-4 px-6 rounded-2xl shadow-md transition-all duration-300 w-full md:w-max">
+                    <a
+                        href="https://t.me/copyten_in_bot"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gradient-to-r text-lg from-emerald-500 to-green-400 hover:from-emerald-600 hover:to-green-500 text-white font-semibold py-4 px-6 rounded-3xl shadow-md transition-all duration-300 w-full md:w-max inline-block text-center"
+                    >
                         Подключить счёт и получить доступ
-                    </button>
+                    </a>
 
-                    <p className="text-gray-400 text-base text-center md:text-left">(настройка за 2 часа, потом — 15 минут
+
+                    <p className="text-gray-400 text-base text-center md:text-left">(настройка за 2 часа, потом — 15
+                        минут
                         в неделю)</p>
                 </motion.div>
 
@@ -47,7 +53,7 @@ export default function StatsHero() {
                     transition={{duration: 0.8, delay: 0.2}}
                     className="bg-white rounded-3xl p-4 md:p-6 shadow-lg hover:shadow-xl transition-all duration-500 w-full flex flex-col h-full justify-between"
                 >
-                    <div
+                <div
                         className="relative w-full flex-1 bg-gray-200 rounded-4xl overflow-hidden flex items-center justify-center min-h-[300px] sm:min-h-[400px] md:min-h-[450px]">
                         {!showVideo ? (
                             <button

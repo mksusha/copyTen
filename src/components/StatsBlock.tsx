@@ -12,7 +12,7 @@ const data = [
 
 export default function StatsBlock() {
     return (
-        <section className="bg-gray-50 py-14 sm:py-20 px-4 sm:px-6 overflow-hidden">
+        <section id='stats' className="bg-gray-50 py-14 sm:py-20 px-4 sm:px-6 overflow-hidden">
             <div className="max-w-[1350px] mx-auto">
 
                 <motion.h2
@@ -21,7 +21,7 @@ export default function StatsBlock() {
                     transition={{duration: 0.7}}
                     className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-4 sm:mb-6 tracking-tight"
                 >
-                    Рост уже через <span className="text-emerald-500">месяц!</span>
+                    Рост уже через <span className="text-emerald-500">месяц!*</span>
                 </motion.h2>
 
                 <motion.p
@@ -49,7 +49,7 @@ export default function StatsBlock() {
                         className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-lg hover:shadow-xl transition-all duration-300"
                     >
                         <h3 className="text-gray-800 font-semibold mb-4 text-base sm:text-lg">
-                            Доходность на примере 1 000 000 ₽
+                            Доходность на примере 1 000 000 ₽*
                         </h3>
                         <div className="space-y-5 sm:space-y-6">
                             <div className="flex justify-between text-base sm:text-lg">
@@ -79,7 +79,7 @@ export default function StatsBlock() {
                             transition={{duration: 0.5, delay: 0.3}}
                             className="mt-10 bg-gradient-to-r from-emerald-500 to-green-400 text-white font-bold text-lg sm:text-xl p-4 sm:p-5 rounded-xl sm:rounded-2xl text-center shadow-md"
                         >
-                            Итого: 24 666–31 333 ₽
+                            Итого: 24 666–31 333 ₽*
                         </motion.div>
 
                         <p className="text-gray-400 text-xs sm:text-sm mt-4 leading-snug">
@@ -95,14 +95,14 @@ export default function StatsBlock() {
                         className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-lg hover:shadow-xl transition-all duration-300"
                     >
                         <h3 className="text-gray-800 font-semibold mb-4 text-base sm:text-lg">
-                            Сравнение с квартирой
+                            Сравнение с квартирой*
                         </h3>
                         <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
                             <strong>Дорогая квартира (7–8 млн ₽)</strong> приносит 30–35 тыс. ₽ в месяц, но требует
                             ремонта раз в 10 лет.
                             <br/><br/>
                             Со стратегией — те же деньги, с такими же рисками и без хлопот, при капитале <strong>в 5 раз
-                            меньше (1,2 млн ₽ против 7–8 млн ₽)</strong>.
+                            меньше* (1,2 млн ₽ против 7–8 млн ₽)</strong>.
                         </p>
                     </motion.div>
 
@@ -114,7 +114,7 @@ export default function StatsBlock() {
                         className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
                     >
                         <h3 className="text-gray-800 font-semibold mb-6 text-base sm:text-lg">
-                            Доходность в сравнении
+                            Доходность в сравнении*
                         </h3>
 
                         <ResponsiveContainer width="100%" height={220}>

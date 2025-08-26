@@ -20,7 +20,7 @@ export default function FAQSection() {
     };
 
     return (
-        <section className="py-16 sm:py-24 bg-gray-50">
+        <section id='faq' className="py-16 sm:py-24 bg-gray-50">
             <div className="mx-auto max-w-[1350px] px-8 sm:px-6">
                 <div className="flex flex-col lg:flex-row items-start gap-8 sm:gap-12">
 
