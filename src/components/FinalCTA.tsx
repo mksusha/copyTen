@@ -35,7 +35,7 @@ export default function FinalCTA() {
                     transition={{duration: 0.5, delay: 0.3}}
                 >
                     <a
-                        href="https://t.me/copyten_in_bot"
+                        href="https://t.me/copyten_in_bot?start=1"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-bold text-base sm:text-lg py-3 sm:py-4 px-6 sm:px-8 rounded-4xl shadow-lg hover:shadow-xl transition-all duration-300"

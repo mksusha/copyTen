@@ -106,7 +106,7 @@ export default function Header() {
 
 
                     <a
-                        href="https://t.me/copyten_in_bot"
+                        href="https://t.me/copyten_in_bot?start=1"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="ml-4 px-6 py-2 rounded-4xl font-semibold border-2 border-emerald-500 text-emerald-500 bg-white hover:bg-emerald-500 hover:text-white transition-all shadow-md flex items-center justify-center gap-2"
@@ -158,7 +158,7 @@ export default function Header() {
                                 </li>
                             ))}
                             <li>
-                                <a href="#cta" className="block mt-4 px-6 py-2 rounded-4xl font-semibold border-2 border-emerald-500 text-emerald-500 bg-white hover:bg-emerald-500 hover:text-white transition-all shadow-md text-center">
+                                <a href="https://t.me/copyten_in_bot?start=1" className="block mt-4 px-6 py-2 rounded-4xl font-semibold border-2 border-emerald-500 text-emerald-500 bg-white hover:bg-emerald-500 hover:text-white transition-all shadow-md text-center">
                                     Подключить счёт
                                 </a>
                             </li>
