@@ -51,46 +51,20 @@ export default function StatsHero() {
                     initial={{opacity: 0, y: 40}}
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.8, delay: 0.2}}
-                    className="bg-white rounded-3xl p-4 md:p-6 shadow-lg hover:shadow-xl transition-all duration-500 w-full flex flex-col h-full justify-between"
+                    className="bg-white rounded-3xl p-4 md:p-6 shadow-lg hover:shadow-xl transition-all duration-500 w-full"
                 >
-                    <div
-                        className="relative w-full flex-1 bg-gray-200 rounded-4xl overflow-hidden flex items-center justify-center min-h-[300px] sm:min-h-[400px] md:min-h-[450px]">
-                        {!showVideo ? (
-                            <button
-                                onClick={() => setShowVideo(true)}
-                                className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40"
-                                aria-label="Play video"
-                            >
-                                <video
-                                    className="absolute inset-0 w-full h-full object-cover"
-                                    src="https://copyten.ru/docs/video/invets_robot_presentation_CopyTen_1080p_h264.mp4"
-                                    muted
-                                    playsInline
-                                    preload="metadata"
-                                />
-                                <span
-                                    className="bg-emerald-500 hover:bg-emerald-600 text-white p-5 sm:p-6 md:p-6 rounded-full shadow-lg flex items-center justify-center relative z-10">
-                <Play size={36} className="sm:!w-12 sm:!h-12"/>
-            </span>
-                            </button>
-                        ) : (
-                            <video
-                                className="w-full h-full rounded-4xl object-cover"
-                                controls
-                                autoPlay
-                            >
-                                <source
-                                    src="https://copyten.ru/docs/video/invets_robot_presentation_CopyTen_1080p_h264.mp4"
-                                    type="video/mp4"
-                                />
-                                Ваш браузер не поддерживает воспроизведение видео.
-                            </video>
-
-                        )}
+                    <div className="relative w-full rounded-4xl overflow-hidden mt-10 aspect-video bg-gray-200">
+                        <iframe
+                            className="absolute inset-0 w-full h-full"
+                            src="https://rutube.ru/play/embed/dadef7ed04089bb7523dd478f17007fb/?p=L18SGYQ_enK3yD6kyKQKFw"
+                            title="Видео"
+                            frameBorder="0"
+                            allow="clipboard-write; autoplay"
+                            allowFullScreen
+                        ></iframe>
                     </div>
 
-
-                    <p className="text-gray-500 text-sm mt-4 text-center">
+                    <p className="text-gray-500 text-xl mt-10 text-center">
                         Обучение в чатах — доступ после добавления счёта
                     </p>
                 </motion.div>
