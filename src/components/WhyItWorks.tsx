@@ -105,7 +105,7 @@ export default function WhyItWorksPlaceholder() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
-        <section id='why-it-works' className="bg-gray-50 py-16">
+        <section id='why-it-works' className="bg-gray-50 py-10 sm:py-16">
             <div className="mx-auto max-w-[1350px] px-8 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-12 lg:gap-y-0">
 

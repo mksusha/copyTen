@@ -78,7 +78,7 @@ export default function HowItWorks() {
                     </div>
 
 
-                    <div ref={rightRef} className="flex justify-center items-start mt-8 lg:mt-0">
+                    <div ref={rightRef} className="flex justify-center items-start !h-96 mt-8 lg:mt-0">
                         <div className="w-full sm:h-96 h-64 bg-black rounded-3xl">
                             <Image
                                 src="/sc9.jpg"
